@@ -1,25 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:headphone_ui/details_page.dart';
-import 'package:headphone_ui/homepage.dart';
-// import 'package:headphone_ui/details_page.dart';
-// import 'homepage.dart';
-// import 'eq_setting.dart';
+import 'package:headphone_ui/screens/homepage.dart';
 
-// void main() {
-//   runApp(const FirstRoute());
-// }
+import 'screens/eq_setting.dart';
+
+
 
 void main() {
   runApp(
     MaterialApp(
-      title: 'Named Routes Demo',
+      title: 'Headphone',
      
       initialRoute: '/',
-      routes: {
-       
+      routes: {  
         '/': (context) => HomePage(),
-    
-        '/second': (context) => SecondScreen(),
+        '/details': (context) => const SecondScreen(),
+        '/eq': (context) => EQSettingsPage (),
       },
     ),
   );
